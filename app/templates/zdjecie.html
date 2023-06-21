@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<h1>Zdjęcie produktu {{ item.tw_Nazwa }}</h1>
+
+<div>
+    <img src="data: image / png; base64, {{ photo }}" />
+</div>
+<div>
+<!--    {{ photo.zd_Zdjecie }}-->
+</div>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Subiekt Product Checker</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+<body>
+    <!---blok główny---->
+    <div class="container-fluid">
+        <!--- pasek nawigacyjny --->
+        <nav class="navbar bg-body-tertiary">
+            <!--- RWD dla navbara --->
+          <div class="container-fluid">
+            <a href="{% url 'index' %}" class="navbar-brand">SPC - Subiekt Product Checker</a>
+              <!--- Searchbar --->
+              <form class="d-flex" role="search" action="{% url 'search_results' %}" method="get">
+              <input class="js-kioskboard-input form-control me-2" data-kioskboard-type="keyboard" data-kioskboard-placement="bottom" data-kioskboard-specialcharacters="false"
+                      name="q" type="search" placeholder="Szukaj" aria-label="Szukaj">
+              <button class="btn btn-outline-success" type="submit">Szukaj</button>
+              <div class="simple-keyboard"></div>
+            </form>
+          </div>
+        </nav>
+
+        {% block content %}
+
+        {% endblock %}
+    </div>
+</body>
+</html>

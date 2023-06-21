@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<h1>Wyniki wyszukiwania</h1>
+
+<ul class="list-group">
+  <!--- listowanie produktów wg kryteriów wyszukiwania--->
+  {% for towar in object_list %}
+      <a class="list-group-item list-group-item-action" href="http://127.0.0.1:8080/towar/{{ towar.tw_Id }}/">
+        {{ towar.tw_Symbol }}, {{ towar.tw_Nazwa }}, {{ towar.EAN }}
+      </a>
+  {% empty %}
+    'Wpisz nazwę, symbol lub kod kreskowy w polu wyszukiwania'
+  {% endfor %}
+</ul>
+</div>
+
+{% endblock %}

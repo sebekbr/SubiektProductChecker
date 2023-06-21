@@ -1,0 +1,33 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<div class="">
+    <h2>{{ item.tw_Nazwa }}</h2>
+    <div class="float-start col-4">
+      <table class="table table-striped">
+        <tbody>
+          <tr>
+              <td>Symbol: </td>
+              <td>{{ item.tw_Symbol }}</td>
+          </tr>
+          <tr>
+            <td>EAN: </td>
+            <td>{{ item.tw_PodstKodKresk }}</td>
+          </tr>
+          <tr>
+            <td>Cena:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Stan:</td>
+            <td>{{ quantity.st_Stan|floatformat:3 }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="float-end col-6">
+        <h3>Zdjęcie:</h3>
+        <img class="img-fluid" src="data: image / png; base64, {{ photo }}" />
+    </div>
+</div>
+{% endblock %}
