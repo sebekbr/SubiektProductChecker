@@ -59,11 +59,12 @@ def towar_stan(request, pk):
 class SearchResultsView(ListView):
     model = Towar
     template_name = "search.html"
+    # ordering = ['']
 
     def get_queryset(self):  # new
         query = self.request.GET.get("q")
         object_list = Towar.objects.filter(
             Q(tw_Nazwa__icontains=query) | Q(tw_Symbol__icontains=query) | Q(tw_PodstKodKresk__icontains=query)
-        )
+        ).order_by('tw_Nazwa')
         return object_list
 
