@@ -4,16 +4,72 @@
 
 <h1>Wyniki wyszukiwania</h1>
 
-<ul class="list-group">
-  <!--- listowanie produktów wg kryteriów wyszukiwania--->
-  {% for towar in object_list %}
-      <a class="list-group-item list-group-item-action" href="http://127.0.0.1:8080/towar/{{ towar.tw_Id }}/">
-        {{ towar.tw_Symbol }}, {{ towar.tw_Nazwa }}, {{ towar.EAN }}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Lp.</th>
+      <th scope="col">Symbol</th>
+      <th scope="col">Nazwa</th>
+      <th scope="col">EAN</th>
+      <th scope="col">Stan</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for towar in object_list %}
+        <tr>
+          <th scope="row">{{ forloop.counter }}</th>
+          <td><a class="list-group-item list-group-item-action" href="http://127.0.0.1:8080/towar/{{ towar.tw_Id }}/">
+              {{ towar.tw_Symbol }}</a></td>
+          <td><a class="list-group-item list-group-item-action" href="http://127.0.0.1:8080/towar/{{ towar.tw_Id }}/">
+              {{ towar.tw_Nazwa }}</a></td>
+          <td><a class="list-group-item list-group-item-action" href="http://127.0.0.1:8080/towar/{{ towar.tw_Id }}/">
+              {{ towar.tw_PodstKodKresk }}</a></td>
+          <td>{{ quantity.tw_Stan}}</td>
+        </tr>
       </a>
-  {% empty %}
-    'Wpisz nazwę, symbol lub kod kreskowy w polu wyszukiwania'
-  {% endfor %}
-</ul>
-</div>
+    {% empty %}
+        'Wpisz nazwę, symbol lub kod kreskowy w polu wyszukiwania'
+    {% endfor %}
+  </tbody>
+</table>
+
+<!--<div class="pagination">-->
+<!--    <span class="step-links">-->
+<!--        {% if page_obj.has_previous %}-->
+<!--            <a href="?page=1">&laquo; first</a>-->
+<!--            <a href="?page={{ page_obj.previous_page_number }}">previous</a>-->
+<!--        {% endif %}-->
+
+<!--        <span class="current">-->
+<!--            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.-->
+<!--        </span>-->
+
+<!--        {% if page_obj.has_next %}-->
+<!--            <a href="?page={{ page_obj.next_page_number }}">Dalej</a>-->
+<!--            <a href="?page={{ page_obj.paginator.num_pages }}">Ostatnia &raquo;</a>-->
+<!--        {% endif %}-->
+<!--    </span>-->
+<!--</div>-->
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+      {% if page_obj.has_previous %}
+        <a href="?page=1">&laquo; Początek</a>
+        <li class="page-item disabled">
+            <a class="page-link" href="{{ page_obj.previous_page_number }}" tabindex="-1" aria-disabled="true">Wstecz</a>
+        </li>
+      {% endif %}
+      {% for page in pagination %}
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+      {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+      {% endfor %}
+      {% if page_obj.has_next %}
+        <li class="page-item">
+            <a class="page-link" href="{{ page_obj.next_page_number }}">Dalej</a>
+        </li>
+      {% endif %}
+  </ul>
+</nav>
 
 {% endblock %}
