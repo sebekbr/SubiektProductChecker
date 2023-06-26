@@ -8,9 +8,7 @@
     {% bootstrap_javascript %}
 </head>
 <body class="bg-light bg-gradient">
-    <!---blok główny---->
-    <div class="container-fluid">
-        <!--- pasek nawigacyjny --->
+<!--- pasek nawigacyjny --->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient">
             <div class="container-fluid">
             <a href="{% url 'index' %}" class="navbar-brand">SPC - Subiekt Product Checker</a>
@@ -47,7 +45,8 @@
             </div>
           </div>
         </nav>
-
+    <!---blok główny---->
+    <div class="container-fluid">
         {% block content %}
 
         {% endblock %}
