@@ -57,3 +57,17 @@ class Zdjecie(models.Model):
     def __str__(self):
         return self.zd_Zdjecie
 
+
+class Kodkreskowy(models.Model):
+    kk_id = models.IntegerField(db_column='kk_Id', primary_key=True)  # Field name made lowercase.
+    kk_idtowar = models.ForeignKey('Towar', models.DO_NOTHING, db_column='kk_IdTowar')  # Field name made lowercase.
+    kk_kod = models.CharField(db_column='kk_Kod', max_length=20)  # Field name made lowercase.
+    kk_ilosc = models.DecimalField(db_column='kk_Ilosc', max_digits=19, decimal_places=4, blank=True, null=True)  # Field name made lowercase.
+
+    class Meta:
+        managed = False
+        db_table = 'tw_KodKreskowy'
+        # unique_together = (('kk_idtowar', 'kk_kod'),)
+
+    def __str__(self):
+        return self.kk_kod
