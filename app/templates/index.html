@@ -6,12 +6,14 @@
     {% load bootstrap5 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet"> </head>
 <body class="bg-light bg-gradient">
 <!--- pasek nawigacyjny --->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient">
             <div class="container-fluid">
-            <a href="{% url 'index' %}" class="navbar-brand">SPC - Subiekt Product Checker</a>
+            <a href="{% url 'index' %}" class="navbar-brand" style="font-family:Comfortaa, cursive;">SPC - Subiekt Product Checker</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
