@@ -11,7 +11,7 @@
     <!---blok główny---->
     <div class="container-fluid">
         <h1>BRAK ZDJĘCIA</h1>
-        <a href="http://10.0.0.10:8080" class="btn btn-primary" role="button">Wróć</a>
+        <a href="{{request.META.HTTP_REFERER|escape}}" class="btn btn-primary" role="button">Wróć</a>
     </div>
 </body>
 </html>
