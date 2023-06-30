@@ -8,7 +8,8 @@
     {% bootstrap_javascript %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet"> </head>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+</head>
 <body class="bg-light bg-gradient">
 <!--- pasek nawigacyjny --->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient">
@@ -54,6 +55,13 @@
     <!---blok główny---->
     <div class="container-fluid">
         {% block content %}
+
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <form class="d-flex" role="search" action="{% url 'search_results' %}" method="get">
+                <input class="form-control me-2" type="search" name="q" placeholder="Szukaj" aria-label="Szukaj">
+                <button class="btn btn-primary active" type="submit" >Search</button>
+            </form>
+        </div>
 
         {% endblock %}
     </div>
