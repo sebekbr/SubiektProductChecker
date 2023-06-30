@@ -85,10 +85,10 @@ DATABASES = {
 
     'subiekt': {
         'ENGINE': 'mssql',
-        'NAME': 'astra',
+        'NAME': 'testowa',
         'USER': 'sa',
         'PASSWORD': '',
-        'HOST': 'HOST\\INSERTGT',
+        'HOST': '(local)\\INSERTGT',
         'OPTIONS': {'driver': 'ODBC Driver 17 for SQL Server', },
     }
 }
