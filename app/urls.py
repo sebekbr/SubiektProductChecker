@@ -11,6 +11,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     path('index.html', views.index, name='index'),
+    path('about.html', views.about, name='about'),
     path('towar/<int:pk>/', views.towar_details, name='towar'),
     # path('zdjecie/<int:pk>/', views.towar_photo, name='towar_photo'),
     path('zdjecie/<int:pk>/', views.image_view, name='image_view'),
