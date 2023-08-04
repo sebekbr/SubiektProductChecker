@@ -17,11 +17,12 @@
           <tr>
             <td>EAN dodatkowy: </td>
             <td>
-                {% for ean in ean_list %}
-                    <p>{{ ean.kk_kod }}</p>
-                {% empty %}
-                    <p>Brak dodatkowych kodów kreskowych</p>
-                {% endfor %}
+                    {{ kod_dodatkowy }}
+<!--                {% for kod in ean_list %}-->
+<!--                    <p>{{ kod.ean }}</p>-->
+<!--                {% empty %}-->
+<!--                    <p>Brak dodatkowych kodów kreskowych</p>-->
+<!--                {% endfor %}-->
             </td>
           </tr>
           <tr>
