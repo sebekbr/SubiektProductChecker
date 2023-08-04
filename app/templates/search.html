@@ -23,8 +23,9 @@
           <td><a class="list-group-item list-group-item-action" href="http://127.0.0.1:8080/towar/{{ towar.tw_Id }}/">
               {{ towar.tw_Nazwa }}</a></td>
           <td><a class="list-group-item list-group-item-action" href="http://127.0.0.1:8080/towar/{{ towar.tw_Id }}/">
-              {{ towar.tw_PodstKodKresk }}</a></td>
-          <td>{{ quantity.tw_Stan}}</td>
+              {{ towar.tw_PodstKodKresk }}</a>
+          </td>
+          <td>{{ quantity.st_Stan|floatformat:3 }}</td>
         </tr>
       </a>
     {% empty %}
