@@ -1,4 +1,4 @@
-{% extends 'index.html' %}
+﻿{% extends 'index.html' %}
 
 {% block content %}
 <div class="">
@@ -15,30 +15,7 @@
             <td>{{ item.tw_PodstKodKresk }}</td>
           </tr>
           <tr>
-            <td>EAN dodatkowy: </td>
-            <td>
-                    {{ kod_dodatkowy }}
-<!--                {% for kod in ean_list %}-->
-<!--                    <p>{{ kod.ean }}</p>-->
-<!--                {% empty %}-->
-<!--                    <p>Brak dodatkowych kodów kreskowych</p>-->
-<!--                {% endfor %}-->
-            </td>
-          </tr>
-          <tr>
-            <td>Cena detal netto:</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Cena detal brutto:</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Cena hurt netto:</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Cena hurt brutto:</td>
+            <td>Cena:</td>
             <td></td>
           </tr>
           <tr>
@@ -47,19 +24,10 @@
           </tr>
         </tbody>
       </table>
-
-      <div class="float-start p-1">
-        <a href="{{request.META.HTTP_REFERER|escape}}" class="btn btn-primary" role="button">Wróć</a>
-      </div>
-      <div class="float-start p-1">
-        <a href="#" class="btn btn-primary" role="button">Informator</a>
-      </div>
-
     </div>
-
     <div class="float-end col-6">
         <h3>Zdjęcie:</h3>
-        <img class="img-fluid" src="data: image / png; base64, {{ photo }}" />
+        <img class="img-fluid" src="data:{{ photo_mime }};base64,{{ photo }}" />
     </div>
 </div>
 {% endblock %}
