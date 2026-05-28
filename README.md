@@ -28,6 +28,8 @@ its photo — displayed on a dedicated touchscreen terminal on the warehouse she
 ![description](img/search_result.png)
 - Item details
 ![description](img/item_details.png)
+- spc_service Console
+![description](img/spc_service_console.png)
 
 ## 🛠 Tech stack
 
