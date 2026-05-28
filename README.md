@@ -19,6 +19,14 @@ its photo — displayed on a dedicated touchscreen terminal on the warehouse she
 - Served via Django on a local network; Currently deployed on a **Lenovo SFF** 
   with 17" touchscreen (also tested on AWS EC2)
 
+#### Screens
+- Main View
+![alt text]([https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png](https://github.com/sebekbr/SubiektProductChecker/blob/main/img/spc_main_view.png) "SPC Main View")
+- Search result
+![alt text]([https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png](https://github.com/sebekbr/SubiektProductChecker/blob/main/img/spc_main_view.png) "SPC Main View")
+- Item details
+![alt text]([https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png](https://github.com/sebekbr/SubiektProductChecker/blob/main/img/spc_main_view.png) "SPC Main View")
+
 ## 🛠 Tech stack
 
 - Python 3 / Django
