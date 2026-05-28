@@ -33,6 +33,14 @@ Works also on mobiles via local WiFi.
 - Served via Django on a local network; Currently deployed on a **Lenovo SFF** (i3-4130T, 4GB RAM, 120 GB SSD)
   with 17" touchscreen HP L6017tm (also tested on AWS EC2) - it will work on most devices
 
+## :construction: Technical Challenges
+
+- SQL queries,
+- MSSQL integration,
+- touchscreen UX,
+- images decoding,
+- local network deployment
+
 ## :open_book: Lessons Learned
 
 This project improved my understanding of:
