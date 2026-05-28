@@ -21,11 +21,11 @@ its photo — displayed on a dedicated touchscreen terminal on the warehouse she
 
 #### Screens
 - Main View
-![desription]([img/spc_main_view.png](img/spc_main_view.png) "SPC Main View")
+![desription](img/spc_main_view.png)
 - Search result
-![description](img/search_result.png](img/search_result.png) "SPC Search result")
+![description](img/search_result.png)
 - Item details
-![description]([img/item_details.png](img/item_details.png) "SPC Item details")
+![description](img/item_details.png)
 
 ## 🛠 Tech stack
 
