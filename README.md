@@ -12,7 +12,7 @@ The existing workflow was too slow and required manual navigation through the ER
 
 SPC was designed as a lightweight touchscreen terminal/mobile application to simplify and accelerate this process.
 
-## Solution Overview
+## :white_check_mark: Solution Overview
 
 SPC is a Django-based internal application connected to the Subiekt GT ERP database.
 
@@ -33,7 +33,22 @@ Works also on mobiles via local WiFi.
 - Served via Django on a local network; Currently deployed on a **Lenovo SFF** (i3-4130T, 4GB RAM, 120 GB SSD)
   with 17" touchscreen HP L6017tm (also tested on AWS EC2) - it will work on most devices
 
-## Screens
+## :open_book: Lessons Learned
+
+This project improved my understanding of:
+- ERP database structures,
+- business process optimization,
+- Django-based internal tooling,
+- SQL-based integrations,
+- decoding images directly from DB
+- infrastructure planning for internal systems.
+
+## :soon: Future Improvements
+- Docker deployment,
+- items history info
+- file logging,
+
+## :computer: Screens
 - Ready-To-Work
 ![desription](img/ready_to_work.jpg)
 - Main View
@@ -47,6 +62,7 @@ Works also on mobiles via local WiFi.
 
 ## 🛠 Tech stack
 
+- Windows Server
 - Python 3 / Django
 - MS SQL Server (Subiekt GT database)
 - pyodbc / ODBC connection
