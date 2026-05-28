@@ -16,10 +16,12 @@ its photo — displayed on a dedicated touchscreen terminal on the warehouse she
 - Connects directly to **MS SQL Server** via **ODBC** (pyodbc)
 - Reads product data and images stored as **base64** in the Subiekt GT database
 - Decodes and renders images on the fly — no separate image storage needed
-- Served via Django on a local network; Currently deployed on a **Lenovo SFF** 
-  with 17" touchscreen (also tested on AWS EC2)
+- Served via Django on a local network; Currently deployed on a **Lenovo SFF** (i3-4130T, 4GB RAM, 120 GB SSD)
+  with 17" touchscreen HP L6017tm (also tested on AWS EC2) - it will work on most devices
 
 #### Screens
+- Ready-To-Work
+![desription](img/ready_to_work.jpg)
 - Main View
 ![desription](img/spc_main_view.png)
 - Search result
