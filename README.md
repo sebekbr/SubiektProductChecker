@@ -1,15 +1,29 @@
 # Subiekt Product Checker (SPC)
 
-A Django web application deployed in a production warehouse environment, 
-built to integrate with the Subiekt GT ERP system (Insert GT package).
+Internal warehouse/product verification system designed for ERP-assisted inventory workflows using Subiekt GT.
 
-## 🎯 Problem solved
+The application was created to improve product verification processes in a real warehouse environment by providing fast barcode/SKU/name-based product lookup, inventory validation and ERP data access through a touchscreen terminal.
 
-Warehouse staff picking orders had no quick way to visually identify products.
-SubiektGT has no tool to display simple and necessary details about goods in DB.
-There was the only way to install a full PC set with SubiektGT. The was no need for that and there was no place
-between warehouse shelves. This tool lets them look up any item by name or code and instantly see 
-its photo — displayed on a dedicated touchscreen terminal on the warehouse shelve.
+## 🎯 Business Problem
+
+In daily warehouse operations, employees needed a fast and reliable way to verify products and product metadata directly from the ERP database.
+
+The existing workflow was too slow and required manual navigation through the ERP system.
+
+SPC was designed as a lightweight touchscreen terminal/mobile application to simplify and accelerate this process.
+
+## Solution Overview
+
+SPC is a Django-based internal application connected to the Subiekt GT ERP database.
+
+The system allows warehouse employees to:
+- scan or search products,
+- verify product data,
+- access stock information,
+- simplify warehouse verification workflows.
+
+The application was deployed on a small touchscreen terminal connected to the local network.
+Works also on mobiles via local WiFi.
 
 ## ⚙️ How it works
 
@@ -19,7 +33,7 @@ its photo — displayed on a dedicated touchscreen terminal on the warehouse she
 - Served via Django on a local network; Currently deployed on a **Lenovo SFF** (i3-4130T, 4GB RAM, 120 GB SSD)
   with 17" touchscreen HP L6017tm (also tested on AWS EC2) - it will work on most devices
 
-#### Screens
+## Screens
 - Ready-To-Work
 ![desription](img/ready_to_work.jpg)
 - Main View
