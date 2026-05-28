@@ -21,11 +21,11 @@ its photo — displayed on a dedicated touchscreen terminal on the warehouse she
 
 #### Screens
 - Main View
-![alt text]([https://github.com/sebekbr/SubiektProductChecker/blob/main/img/spc_main_view.png](https://github.com/sebekbr/SubiektProductChecker/blob/main/img/spc_main_view.png) "SPC Main View")
+![alt text]([/img/spc_main_view.png](/img/spc_main_view.png) "SPC Main View")
 - Search result
-![alt text]([https://github.com/sebekbr/SubiektProductChecker/blob/main/img/spc_main_view.png](https://github.com/sebekbr/SubiektProductChecker/blob/main/img/spc_main_view.png)"SPC Main View")
+![alt text](/img/spc_main_view.png](/main/img/spc_main_view.png) "SPC Main View")
 - Item details
-![alt text]([https://github.com/sebekbr/SubiektProductChecker/blob/main/img/spc_main_view.png](https://github.com/sebekbr/SubiektProductChecker/blob/main/img/spc_main_view.png) "SPC Main View")
+![alt text]([/img/spc_main_view.png](/img/spc_main_view.png) "SPC Main View")
 
 ## 🛠 Tech stack
 
